@@ -46,7 +46,7 @@ div.Profile-Image {
 }
 @font-face {
     font-family: 'Nunito';
-    src: url('./fonts/Nunito/Nunito-VariableFont_wght.ttf') format('truetype');
+    src: url('./Nunito-VariableFont_wght.ttf') format('truetype');
     font-weight: 200 1000;
     font-style: normal;
 }
