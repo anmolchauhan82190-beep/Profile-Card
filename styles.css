@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #DBD7D2;
+    margin: 30px;
+}
+article.Profile-Card {
+    background-color: #FEFEFA;
+    display: block;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 22px;
+    padding: 20px;
+    width: 470px;
+}
+div.Cover-Banner {
+    background-color: #C0C0C0;
+    height: 200px;
+    border-radius: 22px 22px 22px 22px;
+    background-image: url(./images/Cover-Banner.png);
+    background-size: cover;
+    background-position: center;
+}
+div.Profile-Image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-top: -75px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Profile-Image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 10%;
+}
+@font-face {
+    font-family: 'Nunito';
+    src: url('./fonts/Nunito/Nunito-VariableFont_wght.ttf') format('truetype');
+    font-weight: 200 1000;
+    font-style: normal;
+}
+article.Profile-Card {
+  font-family: 'Nunito', sans-serif;
+}
+h3, p {
+    color: #808080;
+}
+.Profile-Details p {
+  max-width: 350px;
+  margin: 0 auto;
+}
+ul.Skills {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.Skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+}
+
+.Skills li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 40px;
+  background-color: #f0f4f8;
+  font-size: 14px;
+}
+
+.Skills img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+li.Html-Skill {
+    background-color: #FF7538;
+    color: white;
+}
+li.Css-Skill {
+    background-color: #007FFF;
+    color: white;
+}
+li.Javascript-Skill {
+    background-color: #F0DB4F;
+    color: white;
+}
+li.React-Skill {
+    background-color: #F0F8FF;
+    color: black;
+}
+li.Nodejs-Skill {
+    background-color: #8DB600;
+    color: white;
+}
+section.stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0;
+  border: 1px solid #e2e8f0;
+  border-radius: 15px;
+  padding: 12px 8px;
+  margin:20px;
+  box-sizing: border-box;
+}
+
+section.stats > div {
+  flex: 1;
+  min-width: 0;
+  text-align: center;
+}
+
+section.stats > div + div {
+  border-left: 1px solid #e2e8f0;
+}
+.social-footer {
+  margin-top: 20px;
+  padding-bottom: 5px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  background-color: #eef2f9;
+  color: #202b49;
+
+  font-size: 21px;
+  text-decoration: none;
+
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Brand colours */
+.social-links a[aria-label="GitHub"] {
+  color: #24292f;
+}
+
+.social-links a[aria-label="LinkedIn"] {
+  color: #0a66c2;
+}
+
+.social-links a[aria-label="Instagram"] {
+  color: #e1306c;
+}
+
+.social-links a[aria-label="Email"] {
+  color: #d93025;
+}
+
+/* Hover effect */
+.social-links a:hover {
+  transform: translateY(-3px);
+  background-color: #e1e8f5;
+}
+/* Responsive css */
+article.Profile-Card{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Mobile devices only */
+@media screen and (max-width: 480px) {
+    section.stats {
+        padding: 10px 4px;
+        gap: 0;
+    }
+
+    section.stats > div {
+        flex: 1;
+        min-width: 0;
+        padding: 0 2px;
+        text-align: center;
+    }
+
+    section.stats > div p {
+        font-size: 11px;
+        overflow-wrap: anywhere;
+    }
+}
