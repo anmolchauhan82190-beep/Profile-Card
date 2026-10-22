@@ -24,7 +24,7 @@ div.Cover-Banner {
     background-color: #C0C0C0;
     height: 200px;
     border-radius: 22px 22px 22px 22px;
-    background-image: url(./images/Cover-Banner.png);
+    background-image: url(./Cover-Banner.png);
     background-size: cover;
     background-position: center;
 }
