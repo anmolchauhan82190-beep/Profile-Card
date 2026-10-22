@@ -220,5 +220,10 @@ article.Profile-Card{
     div.Cover-Banner {
         height: 150px;
     }
+    div.Profile-Image {
+        width: 120px;
+        height: 120px;
+        margin-top: -70px;
+    }
 }
 
